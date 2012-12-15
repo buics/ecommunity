@@ -26,6 +26,16 @@ img {
 input {
 	vertical-align: middle;
 }
+
+fieldset {
+	padding: 5px 5px 5px 5px;
+}
+
+h1 a:link, a:active, a:visited {
+	color:white;
+	text-decoration: none;
+}
+
 #wrapper {
 	width: 100%;
 	min-width: 1000px;
@@ -42,6 +52,18 @@ input {
     background: #3b5998;
     border-bottom: 1px solid #000000;
 }
+
+#headerWrapperMember { 
+    height: 60px;
+    background: #9bbb59;
+    border-bottom: 1px solid #000000;
+}
+#headerWrapperCommunity { 
+    height: 60px;
+    background: #4f81bd;
+    border-bottom: 1px solid #000000;
+}
+
 #header {
     padding : 10px;
     color : #8aadbb;
@@ -49,6 +71,15 @@ input {
     margin-left: auto;
     margin-right: auto;
 }
+
+#headerMember {
+    padding : 10px;
+    color : #ffffff;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 #header h1 {
     color:white;
@@ -75,6 +106,18 @@ input {
     clear: both;
 }
 
+.searchWrapper {
+    margin-left: 250px;
+    margin-top: -25px;
+}
+
+.searchWrapper .searchbox {
+    color:gray;
+    font-size: 1.2em;
+    font-family: Arial;
+    padding : 2px 5px 2px 5px;
+    width: 400px;
+}
 
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -100,6 +143,7 @@ input {
 	
 }
 
+
 #container {
 	width: 100%;
 	float: left;
@@ -109,7 +153,7 @@ input {
 
 
 .content {
-	padding: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
 }
 
 #contentLogin {
@@ -190,7 +234,7 @@ input {
 	margin-left: -450px;
 	position: relative;
 	background: #efefef; 
-        height: 500px;
+        height: 510px;
 }
 
 #sideRightLogin input[type='text'] {
@@ -222,23 +266,89 @@ input {
 -----------------------------------------------------------------------------*/
 #footerWrapper {
     background: #efefef;
-    border-top: 1px solid gray;
+    /* border-top: 1px solid gray; */
     height: 51px;	
-    margin: -50px auto 0;
+    margin: -60px auto 0;
     min-width: 1000px;
-    height: 50px;		
+    height: 60px;		
     
     color:gray;
     font-size:.9em;
-    width:1024px;
+    width:100%;
 }
 #footer {
     width:1024px;
     margin-left: auto;
     margin-right: auto;     
-    padding: 5px 5px 5px 5px;
+    padding: 15px 5px 15px 5px;
     text-align: center;
 }
+
+
+
+/* new template from buics 
+-----------------------------------------------------------------------------*/
+.locationStrip {
+	width: 1024px;
+	padding: 10px 10px 10px 10px;
+	height: 1%;
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background:#efefef;
+    font-weight: bold;
+    font-size:1.2em;
+    font-family : Arial; 
+        
+}
+#containerRegion {
+	width: 1024px;
+	padding: 10px 0 50px 0;
+	height: 1%;
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    /* background:blue; */
+        
+}
+#leftRegion {
+    float: left;   
+    width:20%;
+    padding: 5px 5px 5px 0px;
+    /* background:#efefef; */
+}
+
+#middleRegion {
+    float: left;   
+    width: 58%;
+    padding: 5px 5px 5px 5px;
+}
+
+#rightRegion {
+    float: left;
+    width:20%;
+    /* background:#efefef; */       
+}
+
+
+
+
+#containerRegion legend {
+	font-size:1.2em;
+	font-weight:bold;
+	/* border:1px solid green; */
+	padding: 0.2em 0.5em;
+	
+}
+
+#containerRegion fieldset {
+	margin-bottom: 10px;
+		
+}
+
+
+
+
 
 
 .menu{
@@ -352,4 +462,22 @@ top:10px;
 background-color:#FFF;
 border-top:1px solid #e5e5e5;
 font-size:0;
+}
+
+
+
+
+
+
+/* SQL log */
+.cake-sql-log {
+	background: #fff;
+}
+.cake-sql-log td {
+	padding: 4px 8px;
+	text-align: left;
+	font-family: Monaco, Consolas, "Courier New", monospaced;
+}
+.cake-sql-log caption {
+	color:#fff;
 }
