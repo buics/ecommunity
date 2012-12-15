@@ -17,15 +17,16 @@
         <div id="header">
             <h1>eCommunity </h1>
             Philippines                
-            
+            <form method="post" action="Members">
             <div id="signin">
-                <span class="label">Sign in</span>
+                <span class="label">Sign in as a Member!</span>
                 <div class="form">
                 Email : <input type="text" name="txtusername" >
                 Password : <input type="password" name="txtpassword" >
                 <input type="submit" name="txtsubmit" value="Submit">
                 </div>
             </div>
+            </form>
             <div class="clearfix"></div>
 	</div><!-- #header-->
         
@@ -36,66 +37,50 @@
         
         
     <div id="middleContainer">
-	<div id="middle">
-
-		<div id="container">
-			<div id="contentLogin">                            
+		<div id="middle">
+	
+			<div id="container">
+				<div id="contentLogin">                            
+					
+	                            <div id="FindCommunityContainer">
+	                                <div class="label">Find your community : </div>
+	                                <div><input type="text" name="SearchInput" id="SearchInput" /><input type="submit" name="Go" value="Go" id="GoSearch" /></div>
+	                                <div><input type="submit" name="RegisterCommunity" value="Register your Community" id="RegisterCommunity"/></div>
+	                                <div><input type="submit" name="ManageCommunity" value="Manage your Community" id="RegisterCommunity" onclick="window.location = 'Members'"/></div>
+	                            </div>
+	                            
+				</div><!-- #content-->
+			</div><!-- #container-->
+	
+			<div class="sidebar" id="sideRightLogin">			                        
+	            <div style="padding: 10px 10px 10px 10px;" >
+	                <h2>Sign up it’s free for all tax payers!</h2>                             
+	                <fieldset>
+	                    <!-- <legend>Sign up now!</legend>  -->
+		                <div class="form">
+		                    <div class="label">Email Address : </div> <div><input type="text" name="email" /></div>
+		                    <div class="label">Firstname : </div> <div class="control"><input type="text" name="firsname" /></div>
+		                    <div class="label">Lastname : </div>  <div><input type="text" name="lastname" /></div>
+		                    
+		                    <div class="label">Re-enter email : </div> <div><input type="text" name="reemail" /></div>
+		                    <div class="label">Password : </div> <div><input type="text" name="password" /></div>
+		                    
+		                    <div style="padding: 5px 0 5px 0;">
+		                    <div class="option"><input type="radio" name="gender" value="Male"> Male</div>
+		                    <div class="option"><input type="radio" name="gender" value="Female"> Female</div>
+		                    </div>
+		                    
+		                    <input type="submit" name="Submit" value="Sign Up" />
+		                </div>
+	                </fieldset>
+	            </div>                        
+			</div><!-- .sidebar#sideRight -->
+			
+		</div><!-- #middle-->
 				
-                            <div id="FindCommunityContainer">
-                                <div class="label">Find your community : </div>
-                                <div><input type="text" name="SearchInput" id="SearchInput" /><input type="submit" name="Go" value="Go" id="GoSearch" /></div>
-                                <div><input type="submit" name="RegisterCommunity" value="Register your Community" id="RegisterCommunity"/></div>
-                            </div>
-                            
-			</div><!-- #content-->
-		</div><!-- #container-->
-
-		<div class="sidebar" id="sideRightLogin">			                        
-                        <div class="content" >
-                            <h2>Sign up it’s free for all tax payers!</h2>                             
-                            <fieldset>
-                                <!-- <legend>Sign up now!</legend>  -->
-                            <div class="form">
-                                <div class="label">Email Address : </div> <div><input type="text" name="email" /></div>
-                                <div class="label">Firstname : </div> <div class="control"><input type="text" name="firsname" /></div>
-                                <div class="label">Lastname : </div>  <div><input type="text" name="lastname" /></div>
-                                
-                                <div class="label">Re-enter email : </div> <div><input type="text" name="reemail" /></div>
-                                <div class="label">Password : </div> <div><input type="text" name="password" /></div>
-                                
-                                <div style="padding: 5px 0 5px 0;">
-                                <div class="option"><input type="radio" name="gender" value="Male"> Male</div>
-                                <div class="option"><input type="radio" name="gender" value="Female"> Female</div>
-                                </div>
-                                
-                                <input type="submit" name="Submit" value="Sign Up" />
-                            </div>
-                            </fieldset>
-                            <!--
-                            <div class="form1">
-                                <div class="label">Firstname : </div> 
-                                <div class="label">Lastname : </div>  
-                                <div class="label">Email Address : </div> 
-                                <div class="label">Re-enter email : </div> 
-                                <div class="label">Password : </div> 
-                                <div class="label">Male : Female : </div> 
-                                <input type="submit" name="Submit" value="Submit" />
-                            </div>
-                            
-                            <div class="form2">
-                                <div ><input type="text" name="firsname" /></div>
-                                <div><input type="text" name="lastname" /></div>
-                                <div><input type="text" name="email" /></div>
-                                <div><input type="text" name="reemail" /></div>
-                                <div><input type="text" name="password" /></div>
-                                <div><input type="text" name="gender" /></div>                                
-                            </div>
-                            -->
-                        </div>
-                        
-		</div><!-- .sidebar#sideRight -->                
-	</div><!-- #middle-->
     </div>
+    
+    <div class="clearfix"></div>
 </div><!-- #wrapper -->
 
 
