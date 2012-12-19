@@ -58,19 +58,46 @@
 	                <fieldset>
 	                    <!-- <legend>Sign up now!</legend>  -->
 		                <div class="form">
-		                    <div class="label">Email Address : </div> <div><input type="text" name="email" /></div>
-		                    <div class="label">Firstname : </div> <div class="control"><input type="text" name="firsname" /></div>
-		                    <div class="label">Lastname : </div>  <div><input type="text" name="lastname" /></div>
+<?php
+echo $this->Form->create(null, array(’url’ => ’/Registrations/add’));
+?>
+		                    <div class="label">Email Address : </div> <div>
+<?php
+echo $this->Form->input(’email’);
+?> </div>
+		                    <div class="label">Firstname : </div> <div class="control">
+<?php
+echo $this->Form->input(’fname’);
+?></div>
+		                    <div class="label">Lastname : </div>  <div>
+<?php
+echo $this->Form->input(’lname’);
+?>
+</div>
 		                    
-		                    <div class="label">Re-enter email : </div> <div><input type="text" name="reemail" /></div>
-		                    <div class="label">Password : </div> <div><input type="text" name="password" /></div>
+		                    <div class="label">Re-enter email : </div> <div>
+<?php
+echo $this->Form->input(’reemail’);
+?>
+</div>
+		                    <div class="label">Password : </div> <div>
+<?php
+echo $this->Form->input(’password’);
+?>
+</div>
 		                    
 		                    <div style="padding: 5px 0 5px 0;">
-		                    <div class="option"><input type="radio" name="gender" value="Male"> Male</div>
-		                    <div class="option"><input type="radio" name="gender" value="Female"> Female</div>
+		                    <div class="option">
+<?php
+$options = array(’M’ => ’Male’, ’F’ => ’Female’); 
+$attributes = array(’legend’ => false);
+echo $this->Form->radio(’gender’, $options, $attributes);
+?>
 		                    </div>
 		                    
-		                    <input type="submit" name="Submit" value="Sign Up" />
+<?php
+echo $this->Form->end(’Sign Up’);
+?>
 		                </div>
 	                </fieldset>
 	            </div>                        
