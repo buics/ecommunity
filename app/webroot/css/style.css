@@ -320,7 +320,7 @@ h1 a:link, a:active, a:visited {
 
 #middleRegion {
     float: left;   
-    width: 58%;
+    width: 58% ;
     padding: 5px 5px 5px 5px;
 }
 
@@ -329,6 +329,19 @@ h1 a:link, a:active, a:visited {
     width:20%;
     /* background:#efefef; */       
 }
+
+#middleRegionExtended {
+    float: left;   
+    width: 78% ;
+    padding: 5px 5px 5px 5px;
+}
+
+#middleRegionExtended a:link, a:active, a:visited {
+	color : gray;
+}
+
+
+
 
 
 
@@ -480,4 +493,11 @@ font-size:0;
 }
 .cake-sql-log caption {
 	color:#fff;
+}
+
+/* Table */
+table {
+	border: 1px solid #efefef;
+	width: 100%;
+	padding: 5px 5px 5px 5px;
 }
